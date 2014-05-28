@@ -1,0 +1,10 @@
+<h2><%= @group.name %></h2>
+
+<h3>Created by <%= @creator.username %> </h3>
+
+<h4>Members</h4>
+<% @members.each do |member| %>
+	<ul>
+		<li><a href="/users/<%= member.id %>"><%= member.username %></a></li>
+	</ul>
+<% end %>

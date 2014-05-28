@@ -1,0 +1,5 @@
+<% @groups.each do |group| %>
+	<ul>
+		<li><a href="/groups/<%= group.id %>"><%= group.name %></a></li>
+	</ul>
+<% end %>

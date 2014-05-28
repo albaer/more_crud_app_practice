@@ -1,8 +1,8 @@
-users = [{username: "casey"},
-{username: "sasha"},
-{username: "daniel"},
-{username: "annie"},
-{username: "dusty"}]
+users = [{username: "casey", password: "hi"},
+{username: "sasha", password: "hi"},
+{username: "daniel", password: "hi"},
+{username: "annie", password: "hi"},
+{username: "dusty", password: "hi"}]
 
 User.create(users)
 

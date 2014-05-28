@@ -1,0 +1,15 @@
+<nav>
+	
+	<h2>Groups CRUD</h2>
+	<p><a href="/groups">All Groups</a></p>
+
+	<div class="nav_user_info">
+		<% if session[:user_id] %>
+			<p><%= current_user.username %></p>
+			<p><a href="/users/logout">log out</a></p>
+		<% else %>
+			<p><a href="/users/login">log in</a></p>
+		<% end %>
+	</div>
+
+</nav>

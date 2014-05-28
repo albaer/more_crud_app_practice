@@ -8,3 +8,26 @@
 th {
   text-align: left;
 }
+
+form label {
+	display: block;
+}
+
+form input {
+	display: inline;
+}
+
+nav h2, p {
+	display: inline;
+}
+
+.nav_user_info {
+	display: inline;
+	float: right;
+}
+
+nav {
+	background-color: gray;
+	margin-left: -20px;
+	margin-right: -20px;
+}
