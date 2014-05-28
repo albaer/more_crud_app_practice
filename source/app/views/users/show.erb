@@ -1,0 +1,15 @@
+<h2><%= @user.username %></h2>
+
+<h3>Groups created by <%= @user.username %> </h3>
+<% @created_groups.each do |group| %>
+	<ul>
+		<li><a href="/groups/<%= group.id %>"><%= group.name %></a></li>
+	</ul>
+<% end %>
+
+<h3>Groups <%= @user.username %> belongs to</h3>
+<% @joined_groups.each do |group| %>
+	<ul>
+		<li><a href="/groups/<%= group.id %>"><%= group.name %></a></li>
+	</ul>
+<% end %>

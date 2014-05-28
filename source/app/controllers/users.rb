@@ -1,3 +1,5 @@
+#### USER LOGIN ROUTES ####
+
 get "/users/login" do
 	erb :"users/login"
 end
@@ -29,4 +31,13 @@ post "/users/new" do
 	user = User.create(params[:user])
 	session[:user_id] = user.id
 	redirect "/"
+end
+
+#### USER PAGE ROUTES ####
+
+get "/users/:id" do
+	@user = User.find_by_id(params[:id])
+	@created_groups = @user.created_groups
+	@joined_groups = @user.joined_groups
+	erb :"users/show"
 end
